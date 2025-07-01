@@ -845,68 +845,66 @@ a {
 }
 
 .gallery {
-  background: transparent;
-  padding: 80px 0 100px;
+  background-image: url("https://t3.ftcdn.net/jpg/12/92/17/32/360_F_1292173275_ctryo1U5qAQfuoNgBxl4o6remPK4hsNW.jpg");
+  padding: 60px 20px 80px;
   text-align: center;
   position: relative;
   z-index: 2;
 }
 
 .gallery .section-title {
-  font-size: 36px;
+  font-size: 40px;
   font-family: 'Playfair Display', serif;
-  font-weight: bold;
+  font-weight: 700;
   color: #fff;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .gallery .section-subtitle {
-  font-size: 18px;
-  margin-bottom: 50px;
-  color: #e0e0e0;
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: #ddd;
   font-style: italic;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+  gap: 30px;
+  padding: 0 10px;
 }
 
+/* Card-like gallery item */
 .gallery-item {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  color: #fff;
 }
 
 .gallery-item img {
   width: 100%;
-  height: 100%;
+  height: 230px;
   object-fit: cover;
-  display: block;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-.gallery-item:hover img {
-  transform: scale(1.08);
-  filter: brightness(1.1);
+.gallery-item h4 {
+  font-size: 1.1
 }
-
-.gallery-item:hover {
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1), 0 4px 15px rgba(0,0,0,0.5);
-}
-
-.Gallery-back {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                    url("https://png.pngtree.com/thumb_back/fw800/background/20220109/pngtree-blue-abstract-background-image_981828.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
 /* Intro Section */
 
 .contact-intro {
