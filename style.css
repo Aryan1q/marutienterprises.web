@@ -1,0 +1,1156 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  background-color: rgb(178, 14, 14);
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Top Bar */
+.top-bar {
+  background: darkred;
+  color: white;
+  font-size: 14px;
+  padding: 8px 0;
+}
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socials a {
+  color: white;
+  margin-left: 15px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Logo image */
+.Maruti_logo {
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 25px;
+}
+
+/* Navbar container layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  position: relative;
+}
+
+/* Split navbar into 3 sections */
+.navbar-left,
+.navbar-center,
+.navbar-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left {
+  justify-content: flex-start;
+}
+
+.navbar-center {
+  justify-content: center;
+  text-align: center;
+}
+
+.navbar-right {
+  justify-content: flex-end;
+}
+
+.nav{
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0 , 0 , 0 , 0.1);
+}
+
+.nav ul{
+  width : 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav li{
+  height: 50px;
+}
+
+.nav a{
+  height : 100%;
+  padding : 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color : black;
+}
+
+.nav a:hover{
+  background-color: white;
+}
+
+.sidebar{
+  list-style: none;
+  position:fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255 , 0 , 0 , 0.2);
+  backdrop-filter : blur(10px);
+  box-shadow: -10px 0px 10px rgba(0 , 0 , 0 , 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  width: 100%;
+}
+
+.sidebar a{
+  width: 100%;
+}
+
+.menu-button{
+  display: none;
+}
+
+.menu-button svg {
+  fill: white;
+}
+
+.cross svg{
+  fill :white;
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-top: 10px;
+  }
+}
+ 
+@media(max-width: 400px){
+  .sidebar{
+    width: 30%;
+  }
+}
+
+/* Centered text "MARUTI ENTERPRISES" */
+.navbar .logo {
+  font-size: 30px;  /* Increased from 24px */
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+}
+
+/* Nav links */
+nav a {
+  margin: 0 15px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #e63946;
+}
+
+nav a.active {
+  color: #e63946;
+}
+
+/* Menu toggle button (hamburger) */
+.menu-button svg {
+  width: 36px;
+  height: 36px;
+  fill: white;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar .logo {
+    font-size: 26px;
+  }
+
+  .Maruti_logo {
+    height: 50px;
+  }
+
+  nav a {
+    font-size: 15px;
+  }
+
+  .menu-button svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+    .typewriter {
+      display: flex;
+      justify-content: center;
+    }
+
+    .typewriter h2 {
+      font-family: monospace;
+      font-size: 1.8rem;
+      color: white;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid white;
+      width: 0ch;
+      animation: typing 2.5s steps(20, end) forwards, blink 0.8s step-end infinite;
+    }
+
+    .typewriter.done h2 {
+      border-right: none;
+    }
+
+    @keyframes typing {
+      from { width: 0ch; }
+      to { width: 20ch; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+.hero {
+  background-image: url('https://images.stockcake.com/public/4/2/0/4202aedf-db5f-400e-a1eb-93c1342a7718_large/industrial-teamwork-inspection-stockcake.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 80px 20px; /* More vertical padding, balanced horizontal */
+  border-radius: 8px;
+  text-align: center;
+  min-height: 60vh; /* Ensure visibility on tall phones */
+}
+
+/* Mobile Optimization */
+@media screen and (max-width: 600px) {
+  .hero {
+    background-position: center top; /* Focus on top where main subject usually is */
+    padding: 60px 15px;
+  }
+}
+
+
+.hero {
+  position: relative;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  padding: 0 50px; /* Add padding for spacing */
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  z-index: 2;
+  position: relative;
+  max-width: 800px; /* Limit width */
+  width: 100%;      /* Responsive width */
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.welcome {
+  color: red;
+  font-weight: bold;
+  font-size: 15.8px;
+  margin-bottom: 10px;
+  animation-duration: 9s;
+  animation-name: slideInLeft;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 15px;
+  animation-duration: 9s;
+  animation-name: slideInLeft;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 800px;
+  margin-bottom: 25px;
+  animation-duration: 9s;
+  animation-name: slideInLeft;
+}
+
+/* ---------------------- */
+/* Responsive for Mobile  */
+/* ---------------------- */
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 0px;
+    text-align: left;
+  }
+
+  .hero-content {
+    max-width: auto;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .description {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+}
+
+.intro {
+  position: fixed;
+  inset: 0;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between logo and text */
+  text-align: center;
+}
+
+.intro-logo {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  animation: spin 2s linear forwards, burst 1s ease-out 2s forwards;
+}
+
+.intro-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  max-width: 90vw;
+}
+@media (max-width: 600px) {
+  .intro-logo {
+    height: 80px;
+    width: 80px;
+  }
+
+  .intro-text {
+    font-size: 24px;
+  }
+}
+
+/* Hide homepage content during intro */
+body:not(.intro-complete) .top-bar,
+body:not(.intro-complete) .navbar,
+body:not(.intro-complete) .hero {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Show homepage after intro */
+body.intro-complete .top-bar,
+body.intro-complete .navbar,
+body.intro-complete .hero {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+/* Keyframes */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(720deg); }
+}
+@keyframes burst {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(10); opacity: 0; }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.hero-buttons .btn {
+  margin-right: 15px;
+}
+/* Buttons */
+.btn {
+  padding: 12px 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+}
+.white {
+  background: white;
+  color: #002c6e;
+}
+.white:hover{
+  color : white;
+  background-color: red;
+  transition : 0.5s;
+}
+
+.outline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+.outline:hover{
+  background-color: red;
+  transition : 0.5s;
+}
+
+.dark {
+  background: #002c6e;
+  color: white;
+}
+
+/* Stats Section */
+.stats {
+  background: white;
+  color: #333;
+  padding: 60px 0;
+  animation-duration: 6s;
+  animation-name: slideInLeft;
+}
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.stats-left {
+  flex: 1;
+  background: rgb(178, 14, 14);
+  color: white;
+  padding: 40px;
+  min-width: 300px;
+}
+.stats-left h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.stats-left h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.stats-left p {
+  margin-bottom: 25px;
+  animation-name: bounce;
+  animation-duration: 3s;
+}
+
+.stats-grid {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background: white;
+}
+.stat {
+  background: #f8f9fa;
+  padding: 25px;
+  text-align: center;
+}
+.stat h3 {
+  font-size: 26px;
+  color: #002c6e;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  nav {
+    margin: 10px 0;
+  }
+  .stats-container {
+    flex-direction: column;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)),
+              url('https://fs.tu-varna.bg/wp-content/uploads/computer-aided-manufacturing-technologies-03.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 100px 20px; /* Add horizontal padding for smaller screens */
+  text-align: center;
+}
+
+/* Mobile-Specific Adjustments */
+@media screen and (max-width: 600px) {
+  .about-hero {
+    padding: 80px 10px;
+    background-position: center top; /* Focus more on top content */
+  }
+}
+
+.about-hero .about-text {
+  text-align: left;
+  max-width: 800px;
+  font-weight : bold;
+  color : white;
+  font-style: italic;
+  animation-duration: 3s;
+  animation-name: slideInLeft;
+}
+
+.about-hero h3 {
+  color: #ff6347;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.about-hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .typewriter h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Best Practices Grid */
+.about-best-practices {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 0;
+  flex-wrap: wrap;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.082);
+}
+
+.about-info h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.about-info li {
+  color: white;
+}
+
+/* Equipments & Machinery Section */
+.img{
+  width :10px;
+}
+.equipments {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('https://w0.peakpx.com/wallpaper/28/998/HD-wallpaper-mechanical-heart-dfsx.jpg') center/cover no-repeat;
+  padding: 80px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* 📱 Responsive for max-width 600px (phones) */
+@media screen and (max-width: 600px) {
+  .equipments {
+    padding: 50px 15px;
+    background-position: right top;
+    background-size: cover;
+  }
+
+  .section-header h2 {
+    font-size: 1.1rem;
+  }
+
+  .section-header p {
+    font-size: 0.95rem;
+  }
+}
+
+.equipment-card {
+  background: rgba(0, 0, 0, 0.75); /* dark overlay for contrast */
+  border-radius: 12px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 90%;
+  width: 100%;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: left;
+  line-height: 1.5;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Responsive fix for small screens */
+@media screen and (max-width: 600px) {
+  .equipment-card {
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+
+  .equipment-card h2, .equipment-card h3, .equipment-card h4 {
+    font-size: 1.1rem;
+    word-break: break-word;
+  }
+}
+
+
+.section-header h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  animation-name: zoomIn;
+  animation-duration: 2s;
+}
+
+.section-header p {
+  font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  animation-name: zoomIn;
+  animation-duration: 3s;
+}
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.equipment-card {
+  background: rgba(184, 115, 51, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.equipment-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.equipment-card h4 {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.equipment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.section-header.with-bg {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://media.istockphoto.com/id/501196157/photo/technically-electronic-background.jpg?s=612x612&w=0&k=20&c=_htnPlJ_tfcAZJ48SsGG6qDDA87zQXkcquHQaP1tryU=') center/cover no-repeat;
+  color: white;
+  padding: 50px 30px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Services Section */
+.services {
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0, 0, 0, 0.75)),
+              url('https://thumbs.dreamstime.com/b/man-holding-network-security-hands-global-cyber-information-data-networking-protection-privacy-business-internet-154741075.jpg') center/cover no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Section Header Styling */
+.services .section-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: monospace;
+  word-wrap: break-word;
+}
+
+.services .section-header p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #eee;
+}
+
+/* Grid & Card Styling */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Card aligned with equipment design */
+.service-card {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.service-card h4 {
+  font-size: 1.1rem;
+  margin: 15px;
+  color: #fff;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+/* 📱 Mobile Optimization */
+@media screen and (max-width: 600px) {
+  .services {
+    padding: 60px 15px;
+  }
+
+  .services .section-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .services .section-header p {
+    font-size: 0.95rem;
+  }
+
+  .service-card h4 {
+    font-size: 1rem;
+  }
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery {
+  background: transparent;
+  padding: 80px 0 100px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.gallery .section-title {
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.gallery .section-subtitle {
+  font-size: 18px;
+  margin-bottom: 50px;
+  color: #e0e0e0;
+  font-style: italic;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+  filter: brightness(1.1);
+}
+
+.gallery-item:hover {
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1), 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.Gallery-back {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                    url("https://png.pngtree.com/thumb_back/fw800/background/20220109/pngtree-blue-abstract-background-image_981828.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Intro Section */
+
+.contact-intro {
+  background: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+.contact-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.contact-intro p {
+  font-size: 1.1rem;
+  color: White;
+}
+
+/* Form Section */
+.contact-form-section {
+  padding: 40px 0;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.submit-button {
+  display: inline-block;
+  background: #0073e6;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom : 70px;
+}
+.submit-button:hover {
+  background: #005bb5;
+}
+
+/* Contact Info */
+.contact-info {
+  background: white;
+  padding: 40px 0;
+}
+
+.contact-text{
+  color : white;
+  background-image: url('https://invest.up.gov.in/wp-content/uploads/2020/10/Contactus.jpg');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width : 100%;
+  padding : 50px;
+  font-size: 25px;
+  margin-bottom : 50px;
+}
+
+.contact-back{
+  background-image: url("https://img.freepik.com/free-vector/futuristic-background-design_23-2148503793.jpg?semt=ais_hybrid&w=740");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width : 100%;
+}
+
+.map{
+  margin-top: 50px;
+}
+.query{
+  color : white;
+}
+
+.info-block {
+  margin-bottom: 20px;
+  color :antiquewhite;
+}
+.info-block h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color : antiquewhite;
+}
+.info-block p {
+  font-size: 1rem;
+  color: antiquewhite;
+}
+footer {
+background-color: #121212;
+color: #ffffff;
+padding: 50px 20px 30px;
+text-align: center;
+}
+
+.footer-container {
+max-width: 1100px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 40px;
+text-align: left;
+}
+
+.footer-logo {
+font-size: 28px;
+font-weight: 700;
+margin-bottom: 15px;
+color: #ffffff;
+letter-spacing: 1px;
+position: relative;
+display: inline-block;
+}
+
+.footer-logo::after {
+content: '';
+position: absolute;
+width: 50px;
+height: 3px;
+background-color: #f5a623;
+bottom: -8px;
+left: 0;
+}
+
+.footer-about {
+margin-bottom: 20px;
+color: #cccccc;
+font-size: 15px;
+}
+
+.footer-hours {
+color: #f5a623;
+margin-bottom: 25px;
+font-size: 15px;
+font-style: italic;
+}
+
+.footer-section h3 {
+font-size: 20px;
+margin-bottom: 20px;
+color: #ffffff;
+position: relative;
+padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+content: '';
+position: absolute;
+width: 40px;
+height: 2px;
+background-color: #f5a623;
+bottom: 0;
+left: 0;
+}
+
+.footer-services ul,
+.footer-address {
+list-style-type: none;
+}
+
+.footer-services li {
+margin-bottom: 12px;
+color: #cccccc;
+position: relative;
+padding-left: 20px;
+font-size: 15px;
+transition: all 0.3s ease;
+}
+
+.footer-services li:hover {
+color: #f5a623;
+transform: translateX(5px);
+}
+
+.footer-services li::before {
+content: '→';
+position: absolute;
+left: 0;
+color: #f5a623;
+}
+
+.footer-address p {
+margin-bottom: 12px;
+color: #cccccc;
+font-size: 15px;
+display: flex;
+align-items: flex-start;
+}
+
+.footer-address p i {
+margin-right: 10px;
+color: #f5a623;
+}
+
+.copyright {
+margin-top: 50px;
+padding-top: 20px;
+border-top: 1px solid #333333;
+font-size: 14px;
+color: #888888;
+}
+
+@media (max-width: 768px) {
+.footer-container {
+grid-template-columns: 1fr;
+text-align: center;
+gap: 30px;
+}
+
+.footer-section {
+margin-bottom: 30px;
+cursor: pointer;
+}
+
+.footer-logo::after,
+.footer-section h3::after {
+left: 50%;
+transform: translateX(-50%);
+}
+
+.footer-services li {
+padding-left: 0;
+text-align: center;
+}
+
+.footer-services li::before {
+display: none;
+}
+
+.footer-address p {
+justify-content: center;
+}
+}
