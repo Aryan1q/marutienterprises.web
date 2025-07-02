@@ -16,26 +16,40 @@
       position: relative;
     }
 
-    .container {
-      background-color: rgba(255, 255, 255, 0.92);
-      padding: 60px 40px;
-      border-radius: 20px;
-      text-align: center;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      max-width: 500px;
-      width: 90%;
-    }
+.container {
+  background-image: url('https://assets.designtemplate.io/images/Vibrant%20Red%20Fire%20Stream%20Overlay%20for%20Logo%20Animation-HD.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 60px 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 90%;
+  margin: 0 20px; /* Adds spacing from screen edges */
+  color: white;
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 40px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+
 
     h1 {
-      color: red;
+      color: white ;
       font-size: 3rem;
       margin-bottom: 20px;
     }
 
     p {
-      font-size: 1.4rem;
-      color: #333;
+      color : white;
       margin-bottom: 30px;
+      font-size: 30px;;
     }
 
     a {
