@@ -11,87 +11,69 @@
       opacity: 1 !important;
       pointer-events: all !important;
     }
-
-.typewriter {
-  display: flex;
-  justify-content: center;
-  padding: 0 10px;
-}
-
-.typewriter h2 {
-  font-family: monospace;
-  font-size: 2rem;
-  color: white;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid white;
-  width: 0ch;
-  animation:
-    typing 3s steps(27, end) forwards,
+    .typewriter h2 {
+    color: white;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: 3px solid white;
+    white-space: nowrap;
+    width: 0;
+    animation: 
+    type 5s steps(19, end) infinite,
     blink 0.8s step-end infinite;
-}
+    }
 
-.typewriter.done h2 {
-  border-right: none;
-}
+  @keyframes type {
+    0%   { width: 0; }
+    50%  { width: 20ch; }
+    100% { width: 0; }
+    }
+    @keyframes blink {
+        from, to { border-color: transparent; }
+        50% { border-color: white; }
+    }
 
-/* Typewriter animation keyframes */
-@keyframes typing {
-  from { width: 0ch; }
-  to { width: 27ch; }
-}
-
-@keyframes blink {
-  50% { border-color: transparent; }
-}
-
-/* 🔧 Mobile Fix */
-@media screen and (max-width: 600px) {
-  .typewriter h2 {
-    font-size: 1rem;
-    animation:
-      typing-mobile 2.5s steps(20, end) forwards,
-      blink 0.8s step-end infinite;
-  }
-}
-.equipment-section {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-              url('your-background-image.jpg') no-repeat center center;
-  background-size: cover;
-  color: white;
-  border-radius: 12px;
-  padding: 30px 20px;
-  text-align: center;
-  max-width: 100%;
-  overflow-wrap: break-word;
-}
-
-.equipment-section h2 {
-  font-family: monospace;
-  font-size: 1.5rem;
-  white-space: normal;
-  word-break: break-word;
-  margin-bottom: 15px;
-}
-
-/* Responsive tweaks */
-@media screen and (max-width: 600px) {
-  .equipment-section h2 {
-    font-size: 1.2rem;
-  }
-
-  .equipment-section p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
-}
+    @keyframes slide {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
 
 
-@keyframes typing-mobile {
-  from { width: 0ch; }
-  to { width: 20ch; } /* Fewer characters to fit smaller screens */
-}
 
+    .equipment-section {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                  url('your-background-image.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      border-radius: 12px;
+      padding: 30px 20px;
+      text-align: center;
+      max-width: 100%;
+      overflow-wrap: break-word;
+    }
+
+    .equipment-section h2 {
+      font-family: monospace;
+      font-size: 1.5rem;
+      white-space: normal;
+      word-break: break-word;
+      margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .equipment-section h2 {
+        font-size: 1.2rem;
+      }
+
+      .equipment-section p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+    }
 
     @keyframes zoomIn {
       0% {
@@ -111,34 +93,27 @@
     }
 
     @media (max-width: 768px) {
-  .section-header.with-bg h2 {
-    font-size: 20px;
-    line-height: 1.4;
-    padding: 0 10px;
-    word-break: break-word;
-    text-align: center;
-  }
+      .section-header.with-bg h2 {
+        font-size: 20px;
+        line-height: 1.4;
+        padding: 0 10px;
+        word-break: break-word;
+        text-align: center;
+      }
 
-  .section-header.with-bg p {
-    font-size: 14px;
-    padding: 0 15px;
-    text-align: justify;
-  }
+      .section-header.with-bg p {
+        font-size: 14px;
+        padding: 0 15px;
+        text-align: justify;
+      }
 
-  .section-header.with-bg {
-    padding: 30px 15px;
-    border-radius: 10px;
-  }
-}
+      .section-header.with-bg {
+        padding: 30px 15px;
+        border-radius: 10px;
+      }
+    }
   </style>
 
-  <script>
-    window.addEventListener("DOMContentLoaded", () => {
-      setTimeout(() => {
-        document.querySelector(".typewriter").classList.add("done");
-      }, 3100); // Match typing duration
-    });
-  </script>
 </head>
 
 <body class="intro-complete">
@@ -156,76 +131,70 @@
 
   <!-- 🔻 Header / Navbar -->
   <section class="header">
-  <div class="container navbar">
-    <!-- Left: Logo -->
-    <div class="navbar-left">
-      <img class="Maruti_logo" src="https://m.media-amazon.com/images/S/stores-image-uploads-eu-prod/b/AmazonStores/A21TJRUUN4KGV/f805322daab50f917debe30ba24cf7d3.w400.h400.png" alt="Maruti Logo">
+    <div class="container navbar">
+      <div class="navbar-left">
+        <img class="Maruti_logo" src="https://m.media-amazon.com/images/S/stores-image-uploads-eu-prod/b/AmazonStores/A21TJRUUN4KGV/f805322daab50f917debe30ba24cf7d3.w400.h400.png" alt="Maruti Logo">
+      </div>
+
+      <div class="navbar-center">
+        <div class="logo">MARUTI ENTERPRISES</div>
+      </div>
+
+      <div class="navbar-right">
+        <nav>
+          <ul class="sidebar">
+            <li class="cross" onclick="hideSidebar()">
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+              </svg></a>
+            </li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="machinery.html">Machinery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul>
+            <li class="hideOnMobile"><a href="index.html" class="active">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="machinery.html">Machinery</a></li>
+            <li class="hideOnMobile"><a href="services.html">Services</a></li>
+            <li class="hideOnMobile"><a href="clients.html">Clients</a></li>
+            <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+            <li class="menu-button" onclick="showSidebar()">
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+              </svg></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
+  </section>
 
-    <!-- Center: Title -->
-    <div class="navbar-center">
-      <div class="logo">MARUTI ENTERPRISES</div>
-    </div>
-
-    <!-- Right: Nav and Toggle -->
-    <div class="navbar-right">
-      <nav>
-        <!-- Sidebar -->
-        <ul class="sidebar">
-          <li class="cross" onclick="hideSidebar()">
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
-              <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
-            </svg></a>
-          </li>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="machinery.html">Machinery</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-        <!-- Main Nav -->
-        <ul>
-          <li class="hideOnMobile"><a href="index.html" class="active">Home</a></li>
-          <li class="hideOnMobile"><a href="about.html">About</a></li>
-          <li class="hideOnMobile"><a href="machinery.html">Machinery</a></li>
-          <li class="hideOnMobile"><a href="services.html">Services</a></li>
-          <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
-          <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
-          <li class="menu-button" onclick="showSidebar()">
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
-              <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
-            </svg></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</section>
-
-<script>
-  function showSidebar() {
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'flex';
-  }
-  function hideSidebar() {
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'none';
-  }
-</script>
+  <script>
+    function showSidebar() {
+      document.querySelector('.sidebar').style.display = 'flex';
+    }
+    function hideSidebar() {
+      document.querySelector('.sidebar').style.display = 'none';
+    }
+  </script>
 
   <!-- 🏗️ Equipment Section -->
   <section class="equipments" id="equipments">
     <div class="container">
       <div class="section-header with-bg">
         <div class="typewriter">
-          <h2>Equipment & Machinery</h2>
+          <h2><span>Equipment & Machine</span></h2>
         </div>
         <p>
           <i>
-          At Maruti Enterprises, we understand that successful project execution depends on having the right equipment and technology. That’s why we use a wide range of modern, well-maintained machinery and tools that meet industrial standards for safety, accuracy, and efficiency.
-        </i>
+            At Maruti Enterprises, we understand that successful project execution depends on having the right equipment and technology. That’s why we use a wide range of modern, well-maintained machinery and tools that meet industrial standards for safety, accuracy, and efficiency.
+          </i>
         </p>
       </div>
       <div class="equipment-grid">

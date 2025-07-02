@@ -8,55 +8,38 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
-    .top-bar, .header {
-      opacity: 1 !important;
-      pointer-events: all !important;
-    }
-
-    .typewriter {
-      display: flex;
-      justify-content: center;
-      margin-top: 60px;
-    }
-
     .typewriter h2 {
-      font-family: monospace;
-      font-size: 1.8rem;
-      color: white;
-      overflow: hidden;
-      white-space: nowrap;
-      width: 0ch;
-      margin: 0;
-      padding: 0;
-      animation: typing 2s steps(13, end) forwards;
-      position: relative;
+        color: white;
+        font-family: monospace;
+        overflow: hidden;
+        border-right: 3px solid white;
+        white-space: nowrap;
+        width: 0;
+        animation: 
+            type 3.5s steps(12, end) infinite,
+            blink .8s step-end infinite;
     }
 
-    .typewriter h2::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 2px;
-      height: 100%;
-      background-color: white;
-      animation: blink 0.8s step-end infinite;
-    }
-
-    .typewriter h2.typed::after {
-      display: none;
-    }
-
-    @keyframes typing {
-      from { width: 0ch; }
-      to { width: 13ch; }
+    @keyframes type {
+        0% { width: 0; }
+        50% { width: 12ch; }
+        100% { width: 0 }
     }
 
     @keyframes blink {
-      50% { background-color: transparent; }
+        from, to { border-color: transparent; }
+        50% { border-color: white; }
     }
 
-    @keyframes pulse {
+    @keyframes slide {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+     @keyframes pulse {
       0% { transform: scale(1); }
       50% { transform: scale(1.05); }
       100% { transform: scale(1); }
@@ -71,16 +54,8 @@
     .service-card:nth-child(2) { animation-delay: 0.5s; }
     .service-card:nth-child(3) { animation-delay: 1s; }
     .service-card:nth-child(4) { animation-delay: 1.5s; }
-  </style>
 
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      const heading = document.querySelector('.typewriter h2');
-      setTimeout(() => {
-        heading.classList.add('typed');
-      }, 2200);
-    });
-  </script>
+  </style>
 </head>
 
 <body class="intro-complete">
@@ -123,6 +98,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="machinery.html">Machinery</a></li>
           <li><a href="services.html">Services</a></li>
+          <li><a href="clients.html">Clients</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -133,6 +109,7 @@
           <li class="hideOnMobile"><a href="about.html">About</a></li>
           <li class="hideOnMobile"><a href="machinery.html">Machinery</a></li>
           <li class="hideOnMobile"><a href="services.html">Services</a></li>
+          <li class="hideOnMobile"><a href="clients.html">Clients</a></li>
           <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
           <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
           <li class="menu-button" onclick="showSidebar()">
@@ -221,5 +198,15 @@
       Copyright © 2025 MARUTI ENTERPRISES. All rights reserved.
     </div>
   </footer>
+
+  <script> 
+    window.addEventListener('DOMContentLoaded', () => {
+      const heading = document.querySelector('.typewriter h2');
+      setTimeout(() => {
+        heading.classList.add('typed');
+      }, 2200);
+    });
+  </script>
+
 </body>
 </html>
