@@ -40,6 +40,39 @@
         }
     }
 
+@keyframes frostedGlass {
+  0% {
+    backdrop-filter: blur(0px);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: none;
+    opacity: 0;
+  }
+  100% {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+  }
+}
+
+.section-subtitle {
+  padding: 20px 30px;
+  border-radius: 15px;
+  animation: frostedGlass 2.5s ease-out forwards;
+  backdrop-filter: blur(10px); /* for fallback */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: #000;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+
   </style>
 
 
@@ -127,7 +160,7 @@
         <div class="typewriter">
           <div class = "galleryheading"><h2>Our Gallery</h2></div>
         </div>
-        <p class="section-subtitle">A showcase of our latest machinery</p>
+        <p class="section-subtitle">A showcase of our latest machinery at Maruti Enterprises</p>
         <div class="gallery-grid">
           <!-- Gallery Images -->
             <div class="gallery-item"><img src="Images/img1.jpg" alt="Project 1" /></div>

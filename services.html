@@ -55,6 +55,49 @@
     .service-card:nth-child(3) { animation-delay: 1s; }
     .service-card:nth-child(4) { animation-delay: 1.5s; }
 
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+@keyframes frostedGlass {
+  0% {
+    backdrop-filter: blur(0px);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: none;
+    opacity: 0;
+  }
+  100% {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+  }
+}
+
+.para_serv{
+  padding: 20px 30px;
+  border-radius: 15px;
+  animation: frostedGlass 2.5s ease-out forwards;
+  backdrop-filter: blur(10px); /* for fallback */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: #000;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
   </style>
 </head>
 
@@ -141,7 +184,7 @@
         <div class="typewriter">
           <h2><strong>Our Services</strong></h2>
         </div>
-        <p><i>We provide comprehensive industrial services with precision and expertise.</i></p>
+        <p class = "para_serv"><i>Maruti Enterprises provide comprehensive industrial services with precision and expertise.</i></p>
       </div>
       <div class="services-grid">
         <div class="service-card">
