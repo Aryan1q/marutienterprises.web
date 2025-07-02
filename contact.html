@@ -6,49 +6,43 @@
   <title>Contacts | Maruti Enterprises</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-.top-bar, .header {
-  opacity: 1 !important;
-  pointer-events: all !important;
-}
-</style>
-
+  <style>
+    .top-bar, .header {
+      opacity: 1 !important;
+      pointer-events: all !important;
+    }
+  </style>
 </head>
 
 <body class="intro-complete">
+
+<!-- 🔝 Top Bar -->
 <section class="top-bar">
-    <div class="container">
-      <span>📞 : +91 96967 46019</span>
-      <div class="socials">
-        <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-      </div>
+  <div class="container">
+    <span>📞 : +91 96967 46019</span>
+    <div class="socials">
+      <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
     </div>
-  </section>
+  </div>
+</section>
+
 <!-- 🔻 Header / Navbar -->
-  <section class="header">
+<section class="header">
   <div class="container navbar">
-    <!-- Left: Logo -->
     <div class="navbar-left">
       <img class="Maruti_logo" src="https://m.media-amazon.com/images/S/stores-image-uploads-eu-prod/b/AmazonStores/A21TJRUUN4KGV/f805322daab50f917debe30ba24cf7d3.w400.h400.png" alt="Maruti Logo">
     </div>
-
-    <!-- Center: Title -->
     <div class="navbar-center">
       <div class="logo">MARUTI ENTERPRISES</div>
     </div>
-
-    <!-- Right: Nav and Toggle -->
     <div class="navbar-right">
       <nav>
-        <!-- Sidebar -->
         <ul class="sidebar">
           <li class="cross" onclick="hideSidebar()">
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
-              <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
-            </svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="..."/></svg></a>
           </li>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -58,8 +52,6 @@
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-
-        <!-- Main Nav -->
         <ul>
           <li class="hideOnMobile"><a href="index.html" class="active">Home</a></li>
           <li class="hideOnMobile"><a href="about.html">About</a></li>
@@ -69,9 +61,7 @@
           <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
           <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
           <li class="menu-button" onclick="showSidebar()">
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
-              <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
-            </svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="..."/></svg></a>
           </li>
         </ul>
       </nav>
@@ -90,27 +80,34 @@
   }
 </script>
 
-   <!-- 📞 Contact Section -->
-  <section class="contact" id="contact">
-    <div class = "contact-back">
+<!-- 📞 Contact Section -->
+<section class="contact" id="contact">
+  <div class="contact-back">
     <div class="container">
-      <div class = "contact-text">
+      <div class="contact-text">
         <p><strong>Have any questions? We're here to help. Reach out using the form below.</strong></p>
       </div>
-      <form class="contact-form" action="#" method="post">
-       <div class = "query">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="Your email" required />
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" placeholder="How can we help you?" required></textarea>
-        </div>
+
+      <form class="contact-form" action="https://formsubmit.co/aryanyashusachan8@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://aryan1q.github.io/marutienterprises.web/thankyou.html">
+      <input type="hidden" name="_captcha" value="false">
+        <div class="query">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Your email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone No.</label>
+            <input id="phone" name="Phone No." type="tel" placeholder="Your Phone No." required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="How can we help you?" required></textarea>
+          </div>
         </div>
         <button type="submit" class="submit-button">Send Message</button>
       </form>
@@ -126,56 +123,58 @@
         </div>
         <div class="info-block">
           <h3>Email</h3>
-          <p>MARUTI.ENTERPRISES0555@gmail.co.in</p>
+          <p>aryanyashusachan8@gmail.com</p>
         </div>
 
-        <div style="width: 100%; height: 400px;" class = "map">
+        <div style="width: 100%; height: 400px;" class="map">
           <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.553709476423!2d80.946159!3d26.846693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2abfbf21e17%3A0x3dd1c00c1c40e1b4!2sKanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1713459343552!5m2!1sen!2sin" 
-              width="100%" 
-              height="100%" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.553709476423!2d80.946159!3d26.846693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2abfbf21e17%3A0x3dd1c00c1c40e1b4!2sKanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1713459343552!5m2!1sen!2sin" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
+      </div>
     </div>
-</div>
-  </section>
-</div>
+  </div>
+</section>
 
-  <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <div class="footer-logo">MARUTI ENTERPRISES</div>
-                <p class="footer-about">we are a leading mechanical company</p>
-                <p class="footer-hours">Mon - Sat 8:00 - 17:30, Sunday - CLOSED</p>
-            </div>
-            
-        <div class="footer-section">
-            <h3>Our Services</h3>
-            <ul class="footer-services">
-                <li><a href="services.html">Rolling mill and Block mill project execution</a></li>
-                <li><a href="services.html">Machinery erection and installation</a></li>
-                <li><a href="services.html">Plant dismantling and relocation</a></li>
-                <li><a href="services.html">On-site technical support and supervision</a></li>
-            </ul>
-        </div>
-            
-            <div class="footer-section">
-                <h3>Address</h3>
-                <div class="footer-address">
-                    <p><i class="fas fa-map-marker-alt"></i>76- Lifecity , Kalli Billod</p>
-                    <p><i class="fas fa-map-pin"></i>Area- Betma, City- Indore</p>
-                    <p><i class="fas fa-flag"></i>MADHYA PRADESH-453001 INDIA</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="copyright">
-            Copyright © 2025 MARUTI ENTERPRISES. All rights reserved.
-        </div>
-    </footer>
+<!-- 👣 Footer -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <div class="footer-logo">MARUTI ENTERPRISES</div>
+      <p class="footer-about">we are a leading mechanical company</p>
+      <p class="footer-hours">Mon - Sat 8:00 - 17:30, Sunday - CLOSED</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Our Services</h3>
+      <ul class="footer-services">
+        <li><a href="services.html">Rolling mill and Block mill project execution</a></li>
+        <li><a href="services.html">Machinery erection and installation</a></li>
+        <li><a href="services.html">Plant dismantling and relocation</a></li>
+        <li><a href="services.html">On-site technical support and supervision</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Address</h3>
+      <div class="footer-address">
+        <p><i class="fas fa-map-marker-alt"></i>76- Lifecity , Kalli Billod</p>
+        <p><i class="fas fa-map-pin"></i>Area- Betma, City- Indore</p>
+        <p><i class="fas fa-flag"></i>MADHYA PRADESH-453001 INDIA</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    Copyright © 2025 MARUTI ENTERPRISES. All rights reserved.
+  </div>
+</footer>
+
 </body>
 </html>
