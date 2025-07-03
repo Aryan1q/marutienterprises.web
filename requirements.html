@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Clients - Maruti Enterprises</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+
+.projects-section {
+  background-color: white; /* ensures full section bg is white */
+  padding: 40px 20px;
+}
+h2 {
+  color: white;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: 3px solid white;
+  white-space: nowrap;
+  animation: type 4s steps(18) infinite, blink .8s step-end infinite;
+  align-items: center;
+}
+
+@keyframes type {
+  0% { width: 0; }
+  50% { width: 18ch; }
+  100% { width: 0; }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: blue; }
+}
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+.requirements-box {
+  background: rgba(255, 255, 255, 0.6); /* semi-transparent for blur to show */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);  /* for Safari */
+  
+  border-left: 6px solid #1a237e;
+  padding: 25px;
+  margin: 40px 0 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  animation: fadeIn 0.8s ease-in-out;
+
+  position: relative;
+  z-index: 1;
+}
+
+.requirements-box::before {
+  content: '';
+  background-image: url('https://st2.depositphotos.com/4012355/8204/i/450/depositphotos_82044282-stock-photo-join-our-team.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+
+  filter: blur(0.5px);
+  opacity: 0.38;
+  border-radius: 10px;
+}
+
+
+.requirements-box h2 {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.requirements-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.requirements-box li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+  font-size: 1.05rem;
+  color: black;
+  font-weight: bold;
+}
+
+.requirements-box li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: gold;
+  font-weight: bold;
+}
+
+.career-section {
+  background: #fff;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  animation: fadeIn 1.2s ease-in;
+}
+
+.career-heading {
+  font-size: 2.2rem;
+  text-align: center;
+  color: lightsalmon;
+  margin-bottom: 20px;
+}
+
+.career-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  font-weight: bold;
+  color: slategray;
+  margin-bottom: 40px;
+}
+
+.open-positions {
+  background: #f1f5ff;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+  background-image: url('');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.open-positions h2 {
+  color: blue;
+  margin-bottom: 15px;
+}
+
+.open-positions ul {
+  list-style: disc inside;
+  line-height: 1.7;
+  color: gray;
+  font-weight : bold;
+}
+
+.enhanced-contact {
+  background: linear-gradient(to right, darkred, #3949ab);
+  color: white;
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.enhanced-contact a {
+  color: white;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: red;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-btn:hover {
+  background: darkred;
+  transform: translateY(-2px);
+}
+.career-section {
+  position: relative;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  animation: fadeIn 1.2s ease-in;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.career-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20221214/pngtree-students-celebrating-successfully-finished-project-woman-together-people-photo-image_42946326.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  filter: blur(1px);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+    </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body class="intro-complete">
+
+  <!-- Top Bar -->
+  <section class="top-bar">
+    <div class="container">
+      <span>📞 : +91 96967 46019</span>
+      <div class="socials">
+        <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Header / Navbar -->
+  <section class="header">
+    <div class="container navbar">
+      <div class="navbar-left">
+        <img class="Maruti_logo" src="https://m.media-amazon.com/images/S/stores-image-uploads-eu-prod/b/AmazonStores/A21TJRUUN4KGV/f805322daab50f917debe30ba24cf7d3.w400.h400.png" alt="Maruti Logo">
+      </div>
+      <div class="navbar-center">
+        <div class="logo">MARUTI ENTERPRISES</div>
+      </div>
+      <div class="navbar-right">
+        <nav>
+          <ul class="sidebar">
+            <li class="cross" onclick="hideSidebar()">
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+              </svg></a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="machinery.html">Machinery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="requirements.html">Requirements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="machinery.html">Machinery</a></li>
+            <li class="hideOnMobile"><a href="services.html">Services</a></li>
+            <li class="hideOnMobile"><a href="clients.html">Clients</a></li>
+            <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+            <li class="hideOnMobile"><a href="requirements.html">Requirements</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+            <li class="menu-button" onclick="showSidebar()">
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+              </svg></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+
+<section class="career-section">
+  <h1 class="career-heading">🚀 Join Our Team – Careers at Maruti Enterprises</h1>
+  <p class="career-intro">We’re hiring skilled and passionate individuals in the mechanical industry. Whether you're seeking a permanent role or a contract-based position, this is your opportunity to grow with a dynamic team.</p>
+
+  <div class="open-positions">
+    <h2>🔧 Open Positions</h2>
+    <ul>
+      <li>Mechanical Welder</li>
+      <li>Helper</li>
+      <li>Mechanical Engineer</li>
+    </ul>
+  </div>
+
+  <section class="requirements-box">
+    <h3>📌 Requirements</h3>
+    <ul>
+      <li>Minimum 1 year of experience in relevant field (except for helper role)</li>
+      <li>Ability to read basic mechanical drawings and handle tools</li>
+      <li>Willingness to travel and work at client project sites</li>
+      <li>Good communication and team collaboration</li>
+      <li>Helper role: Freshers can apply; must be physically fit</li>
+    </ul>
+  </section>
+
+<div class="contact-box enhanced-contact">
+  <h3>📩 Interested in Applying?</h3>
+  <p>Send your latest resume via email:</p>
+  <p><strong>Email:</strong> <a href="mailto:maruti.enterprises0555@gmail.com">maruti.eneterprises0555@gmail.com</a></p>
+  <p><em>💡 Tip:</em> Mention the position you’re applying for in the subject line.</p>
+  
+  <a href="contact.html" class="contact-btn">Contact Us</a>
+</div>
+</section>
+
+
+
+  <!-- Sidebar JS -->
+  <script>
+    function showSidebar() {
+      document.querySelector('.sidebar').style.display = 'flex';
+    }
+    function hideSidebar() {
+      document.querySelector('.sidebar').style.display = 'none';
+    }
+</script>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <div class="footer-logo">MARUTI ENTERPRISES</div>
+        <p class="footer-about">We are a leading mechanical company</p>
+        <p class="footer-hours">Mon - Sat 8:00 - 17:30, Sunday - CLOSED</p>
+      </div>
+      <div class="footer-section">
+        <h3>Our Services</h3>
+        <ul class="footer-services">
+          <li><a href="services.html">Rolling mill and Block mill project execution</a></li>
+          <li><a href="services.html">Machinery erection and installation</a></li>
+          <li><a href="services.html">Plant dismantling and relocation</a></li>
+          <li><a href="services.html">On-site technical support and supervision</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Address</h3>
+        <div class="footer-address">
+          <p><i class="fas fa-map-marker-alt"></i> 76 - Lifecity, Kalli Billod</p>
+          <p><i class="fas fa-map-pin"></i> Area - Betma, City - Indore</p>
+          <p><i class="fas fa-flag"></i> MADHYA PRADESH - 453001 INDIA</p>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      Copyright © 2025 MARUTI ENTERPRISES. All rights reserved.
+    </div>
+  </footer>
