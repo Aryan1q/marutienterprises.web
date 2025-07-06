@@ -835,7 +835,7 @@ body.intro-complete .hero {
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   overflow-x: auto;
-  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20220421/pngtree-business-concept-business-people-on-digital-background-marketing-binary-texture-photo-image_17384842.jpg');
+  background-image: url('Images/back_clienttab.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -911,7 +911,7 @@ body.intro-complete .hero {
 }
 
 .gallery {
-  background-image: url("https://t3.ftcdn.net/jpg/12/92/17/32/360_F_1292173275_ctryo1U5qAQfuoNgBxl4o6remPK4hsNW.jpg");
+  background-image: url("Images/back_gallery.webp");
   padding: 60px 20px 80px;
   text-align: center;
   position: relative;
@@ -1029,7 +1029,7 @@ body.intro-complete .hero {
 
 .contact-text{
   color : white;
-  background-image: url('https://invest.up.gov.in/wp-content/uploads/2020/10/Contactus.jpg');
+  background-image: url('Images/back_contacthead.webp');
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1040,7 +1040,7 @@ body.intro-complete .hero {
 }
 
 .contact-back{
-  background-image: url("https://img.freepik.com/free-vector/futuristic-background-design_23-2148503793.jpg?semt=ais_hybrid&w=740");
+  background-image: url("Images/back_contact.webp");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
