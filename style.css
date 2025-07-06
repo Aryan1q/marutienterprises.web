@@ -241,7 +241,7 @@ nav a.active {
     }
 
 .hero {
-  background-image: url('https://images.stockcake.com/public/4/2/0/4202aedf-db5f-400e-a1eb-93c1342a7718_large/industrial-teamwork-inspection-stockcake.jpg');
+  background-image: url('Images/back1.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -539,7 +539,7 @@ body.intro-complete .hero {
 
 .about-hero {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)),
-              url('https://fs.tu-varna.bg/wp-content/uploads/computer-aided-manufacturing-technologies-03.jpg') no-repeat center center;
+              url('Images/back_abo.webp') no-repeat center center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -627,7 +627,7 @@ body.intro-complete .hero {
 }
 .equipments {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url('https://w0.peakpx.com/wallpaper/28/998/HD-wallpaper-mechanical-heart-dfsx.jpg') center/cover no-repeat;
+              url('Images/back_equip.webp') center/cover no-repeat;
   padding: 80px 20px;
   color: #fff;
   text-align: center;
@@ -730,7 +730,7 @@ body.intro-complete .hero {
 
 .section-header.with-bg {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('https://media.istockphoto.com/id/501196157/photo/technically-electronic-background.jpg?s=612x612&w=0&k=20&c=_htnPlJ_tfcAZJ48SsGG6qDDA87zQXkcquHQaP1tryU=') center/cover no-repeat;
+              url('Images/back_equiphead.webp') center/cover no-repeat;
   color: white;
   padding: 50px 30px;
   border-radius: 10px;
